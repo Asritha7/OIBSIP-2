@@ -1,0 +1,172 @@
+/* this is a CSS file linked to the index file uses for styling the elements */
+
+:root {
+  --primary-color: darkslategrey;
+  --secondary-color: azure;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	font-size: 1.5rem;
+	font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+	background-color: var(--primary-color);
+	color: var(--secondary-color);
+	margin: 0;
+}
+
+nav {
+	position: fixed;
+	z-index: 5;
+	top: 0;
+	left: 0;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding-inline: 20px;
+	background-color: rgba(20, 23, 24, 0.5);
+	color: var(--secondary-color);
+	height: 70px;
+}
+
+nav ul {
+	display: flex;
+	height: 100%;
+	gap: 30px;
+	justify-content: space-evenly;
+	align-items: center;
+	list-style: none;
+}
+
+nav ul li a {
+	text-decoration: none;
+	color: #fff;
+	font-size: 1.2rem;
+}
+
+nav ul li a:hover {
+	text-decoration: none;
+	color: #808080;
+}
+
+nav .fab {
+	font-size: 1.4rem;
+}
+
+nav .icons {
+	margin: 50px;
+}
+
+footer {
+	margin-top: 50px;
+	font-size: 12px;
+	font-weight: bold;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 7px;
+	color: var(--secondary-color);
+}
+
+.landing {
+	height: 100vh;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	margin-top: 10px;
+}
+
+.aboutMe {
+	word-wrap: break-word;
+	overflow-wrap: break-word;
+	width: 55%;
+	padding: 30px;
+}
+
+#key-competencies {
+	margin-left: 37%;
+	margin-top: -30px;
+}
+
+.icons {
+	display: flex;
+	flex-direction: row;
+	gap: 10px;
+	font-size: 40px;
+}
+
+.fab:hover {
+	cursor: pointer;
+	transform: scale(1.15);
+}
+
+.skills {
+	min-height: 100vh;
+	max-height: fit-content;
+	display: flex;
+	flex-direction: row;
+	gap: 20px;
+	justify-content: center;
+	align-items: center;
+	margin: 10px;
+}
+
+#skill-card {
+	height: 450px;
+	width: 350px;
+	background: var(--secondary-color);
+	color: var(--primary-color);
+	border-radius: 5px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+	padding: 20px;
+	display: flex;
+	flex-direction: column;
+	cursor: pointer;
+	transition: 500ms ease-in-out;
+}
+
+#skill-card ul {
+	list-style: none;
+}
+
+#skill-card h2 {
+	color: var(--primary-color);
+	text-align: center;
+}
+
+#skill-card:hover {
+	transform: scale(1.04);
+}
+
+.projects {
+	min-height: 100vh;
+	max-height: fit-content;
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+	padding-bottom: 110px;
+	margin-bottom: -100px;
+}
+
+#project-card {
+	color: var(--primary-color);
+	padding: 20px;
+	height: 200px;
+	width: 90%;
+	border-radius: 5px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+	background: var(--secondary-color);
+	cursor: pointer;
+	transition: 500ms ease-in-out;
+	margin: 20px;
+}
+
+#project-card:hover {
+	transform: scale(1.04);
+}
